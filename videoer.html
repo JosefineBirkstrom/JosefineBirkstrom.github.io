@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videoer</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="index.html"><img src="img/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="oneblademodeller.html">OneBlade-modeller</a></li>
+                <li class="dropdown">
+                    <a href="#">OneBlade Pro</a>
+                    <ul class="dropdown-content">
+                        <li><a href="videoer.html">Kampagnevideoer</a></li>
+                        <li><a href="lanceringsevent.html">Lanceringsevent</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+
+            <div class="video-section1">
+                <video id="campaignVideo" width="100%" controls>
+                    <source src="videoer/OneBlade Promo video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="text-section1">
+                <h2>Go Pro with OneBlade Pro</h2>
+                <p>Ideen med kampagnevideoen er at sammenligne det at gå pro inden for sport med at opnå professionel barbering og styling med OneBlade Pro. Den understreger, at præcision og ydeevne er afgørende både på banen og i personlig pleje, og præsenterer OneBlade Pro som det ultimative værktøj til at opnå en velplejet og selvsikker stil, der matcher en professionel sportspræstation.</p>
+            </div>
+    </section>
+    <section>
+            <div class="text-section1">
+                <h2>Travel in Style</h2>
+                <p>Med sin rejsevenlige størrelse er OneBlade Pro perfekt til at have med på rejsen. Den revolutionerende 360 Teknologi sikre at du opnår et perfekt look hver gang du barberer dig. Oplev OneBlade Pro, den perfekte rejsemakker.</p>
+            </div>
+            <div class="video-section1">
+                <video id="campaignVideo2" width="100%" controls>
+                    <source src="videoer/PRO Rejser.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+    </section>
+    <section>
+            <div class="video-section1">
+                <video id="campaignVideo3" width="100%" controls>
+                    <source src="videoer/PRO Gaming.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="text-section1">
+                <h2>Pro Gaming? Pro Grooming.</h2>
+                <p>Hvorfor nøjes med at spille som en Pro, når du kan føle dig som en Pro med den nye OneBlade? Tag din barbering til det næste level og forkæl dig selv med den nyeste og bedste OneBlade Philips har at tilbyde. Time to Level up!</p>
+            </div>
+    </section>
+    <section>
+        <div class="container2">
+            <div class="text-section1">
+                <h2>Pro tunes, to go with your Pro look</h2>
+                <p>Hvorfor nøjes med at spille de samme gamle toner, når du kan føle dig som en rockstjerne med den nye OneBlade Pro? Tag din barbering til næste niveau og forkæl dig selv med den nyeste og bedste OneBlade Philips har at tilbyde.</p>
+            </div>
+            <div class="video-section1">
+                <video id="campaignVideo4" width="100%" controls>
+                    <source src="videoer/Pro Musik.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+    <script>
+        function togglePlayPause() {
+            var video = document.getElementById("campaignVideo");
+            var button = document.getElementById("playPauseButton");
+            if (video.paused) {
+                video.play();
+                button.textContent = "Stop";
+            } else {
+                video.pause();
+                button.textContent = "Start";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sammenlign</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="index.html"><img src="img/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="oneblademodeller.html">OneBlade-modeller</a></li>
+                <li><a href="videoer.html">Videoer</a></li>
+                <li><a href="sammenlign.html">Sammenlign</a></li>
+            </ul>
+        </header>
+    </section>
+<div class="container1">
+    <div class="product1">
+        <img src="img/sammenlign/QP6507_23_box.png" alt="Product 1">
+        <h2>QP6507/23 <br> Pro</h2>
+        <button onclick="toggleDetails('product1-details')">Tilbehør</button>
+        <div id="product1-details" class="product-details1">
+            <p>12-in-1 kam og Body kit medfølger</p>
+        </div>
+    </div>
+    <div class="product1">
+        <img src="img/sammenlign/QP2723_23_box.png" alt="Product 2">
+        <h2>QP2723/23 <br> Face</h2>
+        <button onclick="toggleDetails('product2-details')">Tilbehør</button>
+        <div id="product2-details" class="product-details1">
+            <p>3 skægstubbekamme medfølger</p>
+        </div>
+    </div>
+    <div class="product1">
+        <img src="img/sammenlign/QP2834_23_box.png" alt="Product 3">
+        <h2>QP2834/23 <br> Face & Body</h2>
+        <button onclick="toggleDetails('product3-details')">Tilbehør</button>
+        <div id="product3-details" class="product-details1">
+            <p>5-in-1 kam og Body kit medfølger</p>
+        </div>
+    </div>
+</div>
+<div class="section1">
+    <h3>Anvendelsesområder</h3>
+    <div class="section-content1">
+        <div>
+            <p>Ansigt og kroppen</p>
+        </div>
+        <div>
+            <p>Ansigtet</p>
+        </div>
+        <div>
+            <p>Ansigt og kroppen</p>
+        </div>
+    </div>
+</div>
+
+<div class="section1">
+    <h3>Driftstid</h3>
+    <div class="section-content1">
+        <div>
+            <p>90 min driftstid/1 times ladning</p>
+        </div>
+        <div>
+            <p>45 min driftstid/8 timers ladning</p>
+        </div>
+        <div>
+            <p>60 min driftstid/4 timers ladning</p>
+        </div>
+    </div>
+</div>
+
+<div class="section1">
+    <h3>Antal blade</h3>
+    <div class="section-content1">
+        <div>
+            <p>2</p>
+        </div>
+        <div>
+            <p>1</p>
+        </div>
+        <div>
+            <p>2</p>
+        </div>
+    </div>
+</div>
+<script>
+function toggleDetails(id) {
+    var details = document.getElementById(id);
+    if (details.style.display === "none" || details.style.display === "") {
+        details.style.display = "block";
+    } else {
+        details.style.display = "none";
+    }
+}
+</script>
+  
+</body>
+</html>

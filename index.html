@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philips</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="index.html"><img src="img/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="oneblademodeller.html">OneBlade-modeller</a></li>
+                <li class="dropdown">
+                    <a href="#">OneBlade Pro</a>
+                    <ul class="dropdown-content">
+                        <li><a href="videoer.html">Kampagnevideoer</a></li>
+                        <li><a href="lanceringsevent.html">Lanceringsevent</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>Trim, Style & Barber</h2>
+                <p>Klik på de forskellige OneBlade-modeller.</p>
+                <a href="oneblademodeller.html">OPLEV MODELLERNE HER</a>
+            </div>
+            <div class="imgbox">
+                <img src="img/oneblade/QP6507_23.png" class="QP6507_23">
+            </div>
+        </div>
+        <ul class="oneblademodels">
+            <li><img src="img/oneblade/QP6507_23.png" onclick="imgSlider('img/oneblade/QP6507_23.png');changeCircleColor('#C0D000')"></li>
+            <li><img src="img/oneblade/QP2723_23.png" onclick="imgSlider('img/oneblade/QP2723_23.png');changeCircleColor('#DEE43C')"></li>
+            <li><img src="img/oneblade/QP2834_23.png" onclick="imgSlider('img/oneblade/QP2834_23.png');changeCircleColor('##C9C536')"></li>
+        </ul>
+        <ul class="soMe">
+            <li><a href="https://www.facebook.com/Philips"><img src="img/Ikoner/facebook.png"></a></li>
+            <li><a href="https://www.instagram.com/philipsnordics/"><img src="img/Ikoner/insta.png"></a></li>
+            <li><a href="https://www.tiktok.com/tag/philips"><img src="img/Ikoner/tiktok.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+           document.querySelector('.QP6507_23').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
